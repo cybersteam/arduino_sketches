@@ -1,0 +1,26 @@
+// Assign PWM pins
+const int pwmPin = 3;
+
+// Pulse widths for each state
+int state00 = 25;  // 10% duty cycle
+int state01 = 75;  // 30% duty cycle
+int state10 = 128; // 50% duty cycle (half of 256)
+int state11 = 182; // 70% duty cycle
+void setup() {
+  // Set PWM pin as output
+pinMode(pwmPin, OUTPUT);
+}
+
+void loop() {
+  // Transmit each state with a delay
+analogWrite(pwmPin, state00);
+delay(1000);  
+analogWrite(pwmPin, state01);
+delay(1000);
+analogWrite(pwmPin, state10);
+delay(1000);
+analogWrite(pwmPin, state11);
+delay(1000);
+
+// Adjust delay to ensure stable PWM...
+}
