@@ -1,0 +1,57 @@
+void setup() {
+  // Set pins 9 and 10 to output mode
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+}
+
+void loop() {
+  // Generate A tone on pin 9 with a frequency of 440 Hz for 1 second
+tone(10, 440, 100);
+delay(100);
+tone(9, 55, 100);
+delay(100);
+
+  // Generate the D tone on pin 10 with a delay of 50ms
+tone(10, 293, 100);
+delay(100);
+tone(9, 55, 100);
+  delay(100);
+
+tone(10, 164, 100);
+  delay(100);
+
+tone(10, 293, 100);
+  delay(100);
+
+tone(10, 293, 100);
+delay(100);
+
+tone(10, 800, 100);
+delay(50);
+
+tone(10, 293, 100);
+  delay(100);
+
+tone(10, 293, 100);
+delay(100);
+tone(9, 55, 100);
+  delay(100);
+
+tone(10, 800, 100);
+delay(50);
+
+tone(10, 800, 100);
+delay(50);
+
+tone(10, 293, 100);
+
+  // Pause the program for 1 second
+//delay(100);
+
+  // Stop the tones on both pins
+//noTone(9);
+//noTone(10);
+
+  // Wait for 1 second before generating the tones again
+delay(200);
+}
