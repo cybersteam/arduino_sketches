@@ -1,3 +1,13 @@
+//Capabilities we want
+//overall brightness
+button press number of times
+states:
+  warm
+  cool
+  crystal
+  etc.
+
+
 // Assign PWM pins
 const int pwmPin = 3;
 
